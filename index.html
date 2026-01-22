@@ -403,6 +403,66 @@
         text-align: left;
       }
 
+      .testimonials-section {
+        padding: 100px 20px;
+        background: #ffffff;
+        text-align: center;
+      }
+      .testimonials-grid {
+        max-width: 1200px;
+        margin: 60px auto 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 24px;
+      }
+      .testimonial-card {
+        background: white;
+        padding: 32px;
+        border-radius: 16px;
+        text-align: left;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        border: 1px solid #e2e8f0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+      .stars {
+        color: #fbbf24;
+        margin-bottom: 20px;
+        display: flex;
+        gap: 4px;
+      }
+      .testimonial-text {
+        color: #334155;
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 24px;
+        font-weight: 400;
+        flex-grow: 1;
+        overflow-wrap: break-word;
+      }
+      .testimonial-footer {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: auto;
+      }
+      .testimonial-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #e2e8f0;
+        object-fit: cover;
+      }
+      .testimonial-author {
+        font-weight: 700;
+        color: #0f172a;
+        font-size: 15px;
+      }
+
+      
       /* CTA Footer */
       .cta-footer {
         padding: 100px 20px;
@@ -481,6 +541,8 @@
         backdrop-filter: blur(8px);
       }
       .hidden { display: none !important; }
+
+
     </style>
   </head>
   <body>
@@ -634,6 +696,56 @@
       </div>
     </section>
 
+    <section class="testimonials-section">
+      <div class="section-title">学员真实反馈（他们是怎么逆袭的？）</div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="testimonial-text">差点剪错发型，但AI显示不适合我的圆脸，加微信方案后改成侧分有层次，室友都说变精神了，省了大麻烦。</div>
+          <div class="testimonial-footer">
+            <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=100&q=80" class="testimonial-avatar" alt="User">
+            <div class="testimonial-author">小明</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="testimonial-text">脱单前犹豫穿搭，AI分析+顾问建议帮我找到显高方案，99元就自信拍照，结果女生主动聊天。</div>
+          <div class="testimonial-footer">
+            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=100&q=80" class="testimonial-avatar" alt="User">
+            <div class="testimonial-author">阿伟</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="testimonial-text">一直在纠结换什么风格，用这个测了脸型和穿搭，AI分析加上顾问的详细指导，让我避开了雷区，朋友都说我变潮了。感觉后来面试成功和形象的改变也有很大关系。</div>
+          <div class="testimonial-footer">
+            <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=100&q=80" class="testimonial-avatar" alt="User">
+            <div class="testimonial-author">匿名</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="cta-footer">
       <h2>准备好改变了吗？</h2>
       <p>
@@ -665,7 +777,7 @@
       </div>
     </footer>
 
-    <script src="./vendor/face-api.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
     <script>
       const fileInput = document.getElementById("fileInput");
       const dropZone = document.getElementById("dropZone");
@@ -929,7 +1041,7 @@
         if (!message) return "模型加载失败";
         const lower = message.toLowerCase();
         if (lower.includes("failed to fetch") || lower.includes("networkerror")) {
-          return "模型文件无法访问，请使用本地服务器";
+          return "模型文件无法访问，请确保 models 文件夹已正确上传且网络正常";
         }
         return message;
       };
@@ -1080,6 +1192,8 @@
             alert(formatLoadError(error));
         }
       }
+
+ 
     </script>
   </body>
 </html>
